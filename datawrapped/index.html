@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -7,15 +7,35 @@
 </head>
 <body>
   <h1>Que hago en mi año</h1>
-  <iframe title="Que hago en mi año" 
-    aria-label="chart" 
-    id="datawrapper-chart-nPorS" 
-    src="https://datawrapper.dwcdn.net/nPorS/1/" 
-    scrolling="no" 
-    frameborder="0" 
-    style="width: 0; min-width: 100% !important; border: none;" 
-    height="459">
-  </iframe>
-</body>
 
+  <iframe title="Cuanto tiempo le dedico a mis actividades en un año?"
+    aria-label="Grouped Bars"
+    id="datawrapper-chart-nPorS"
+    src="https://datawrapper.dwcdn.net/nPorS/1/"
+    scrolling="no"
+    frameborder="0"
+    style="width: 0; min-width: 100% !important; border: none;"
+    height="585"
+    data-external="1">
+  </iframe>
+
+  <script type="text/javascript">
+    !function() {
+      "use strict";
+      window.addEventListener("message", function(a) {
+        if (void 0 !== a.data["datawrapper-height"]) {
+          var e = document.querySelectorAll("iframe");
+          for (var t in a.data["datawrapper-height"]) {
+            for (var r, i = 0; r = e[i]; i++) {
+              if (r.contentWindow === a.source) {
+                var d = a.data["datawrapper-height"][t] + "px";
+                r.style.height = d;
+              }
+            }
+          }
+        }
+      });
+    }();
+  </script>
+</body>
 </html>
